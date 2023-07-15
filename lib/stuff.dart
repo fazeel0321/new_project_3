@@ -18,7 +18,7 @@ class stuff extends StatelessWidget {
           ),
           title: Row(
             children: [
-              Text(
+              const Text(
                 'Back',
                 style: TextStyle(
                     color: Colors.black,
