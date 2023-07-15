@@ -46,16 +46,25 @@ class stuff extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: Row(
-                children: [
-                  Text(
-                    'Test',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                  ),
-                ],
-              ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            //   child: Row(
+            //     children: [
+            //       Text(
+            //         'Test',
+            //         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            TextField(
+              decoration: InputDecoration(
+                  hintText: 'Text',
+                  hintStyle: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontSize: 20),
+                  border: InputBorder.none),
             ),
             SizedBox(
               height: 20,
