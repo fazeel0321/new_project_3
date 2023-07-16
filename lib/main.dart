@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_project_3/info_screen.dart';
 import 'package:new_project_3/stuff.dart';
 import 'package:new_project_3/test.dart';
 
@@ -13,7 +14,7 @@ class testing extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: myapp(),
+      home: info(),
     );
   }
 }
