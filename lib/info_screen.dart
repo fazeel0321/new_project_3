@@ -23,7 +23,7 @@ class info extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
             Spacer(),
-            Icon(Icons.cancel_sharp)
+            Icon(Icons.close)
           ],
         ),
       ),
@@ -82,7 +82,7 @@ class info extends StatelessWidget {
                         Expanded(
                             child: Container(
                           height: 2,
-                          color: Colors.yellow,
+                          color: Colors.white,
                         )),
                         Container(
                           child: Center(
@@ -96,13 +96,13 @@ class info extends StatelessWidget {
                           height: 15,
                           width: 15,
                           decoration: BoxDecoration(
-                              color: Colors.yellow,
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(30)),
                         ),
                         Expanded(
                             child: Container(
                           height: 2,
-                          color: Colors.yellow,
+                          color: Colors.white,
                         )),
                         Container(
                           child: Center(
@@ -116,7 +116,7 @@ class info extends StatelessWidget {
                           height: 15,
                           width: 15,
                           decoration: BoxDecoration(
-                              color: Colors.yellow,
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(30)),
                         ),
                       ],
@@ -280,7 +280,7 @@ class info extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Row(
+              child: Wrap(
                 children: [
                   Container(
                     child: Center(
@@ -344,7 +344,7 @@ class info extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(15),
-              child: Row(
+              child: Wrap(
                 children: [
                   Container(
                     child: Center(
