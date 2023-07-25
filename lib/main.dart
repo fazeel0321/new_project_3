@@ -15,7 +15,7 @@ class testing extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: projectA(),
+      home: projectscreen(),
     );
   }
 }
