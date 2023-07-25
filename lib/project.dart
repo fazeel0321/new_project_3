@@ -38,7 +38,7 @@ class projectscreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Icon(Icons.grid_view),
-                Icon(Icons.store),
+                Icon(Icons.analytics),
                 CircleAvatar(
                   backgroundColor: Color.fromARGB(255, 241, 121, 9),
                   child: Icon(
