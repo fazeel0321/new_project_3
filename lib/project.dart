@@ -121,7 +121,7 @@ Widget name1(var text1, var text2, var text3) {
       height: 120,
       width: double.infinity,
       decoration: BoxDecoration(
-          boxShadow: [BoxShadow(blurRadius: 10, spreadRadius: 0.1)],
+          boxShadow: [BoxShadow(blurRadius: 3, spreadRadius: 0.1)],
           borderRadius: BorderRadius.circular(20),
           color: Colors.white),
     ),

@@ -99,7 +99,7 @@ class customdraw extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              padding: const EdgeInsets.only(right: 20, left: 20, top: 20),
               child: Row(
                 children: [
                   Icon(
