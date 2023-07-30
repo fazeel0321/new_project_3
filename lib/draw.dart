@@ -56,9 +56,11 @@ class customdraw extends StatelessWidget {
               'fazeelbutt00@gamil.com',
               style: TextStyle(fontWeight: FontWeight.w800),
             ),
-            TextField(
-              enabled: false,
-              decoration: InputDecoration(),
+            SizedBox(
+              height: 20,
+            ),
+            Divider(
+              color: Colors.grey,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
@@ -99,7 +101,8 @@ class customdraw extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 20, left: 20, top: 20),
+              padding: const EdgeInsets.only(
+                  right: 20, left: 20, top: 20, bottom: 20),
               child: Row(
                 children: [
                   Icon(
@@ -117,9 +120,8 @@ class customdraw extends StatelessWidget {
                 ],
               ),
             ),
-            TextField(
-              enabled: false,
-              decoration: InputDecoration(),
+            Divider(
+              color: Colors.grey,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
