@@ -17,17 +17,33 @@ class SortCarScreen extends StatelessWidget {
                   child: Container(
                     height: 70,
                     color: Color.fromARGB(255, 12, 34, 73),
-                    child: Row(children: [
-                      Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                      ),
-                      Spacer(),
-                      Icon(
-                        Icons.favorite,
-                        color: Colors.white,
-                      )
-                    ]),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(
+                              Icons.arrow_back_ios,
+                              color: Colors.white,
+                            ),
+                            Expanded(
+                              child: Container(
+                                color: Colors.white,
+                                // width: 290,
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                      prefixIcon: Icon(Icons.search),
+                                      hintText: 'Serch for used cars',
+                                      border: OutlineInputBorder()),
+                                ),
+                              ),
+                            ),
+                            Icon(
+                              Icons.favorite,
+                              color: Colors.white,
+                            )
+                          ]),
+                    ),
                   ),
                 )
               ],
@@ -37,10 +53,13 @@ class SortCarScreen extends StatelessWidget {
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    box1(Icons.format_list_bulleted, 'Filtters'),
-                    box1(Icons.sort, "Sort"),
+                    cont(text: 'Sort', icon: Icons.sort, width: 70),
+                    cont(
+                      text: 'Filtters',
+                      icon: Icons.format_list_bulleted,
+                    ),
                     box1(Icons.arrow_drop_down, "location"),
                     box1(Icons.price_change, "Price Rate")
                   ],
@@ -83,6 +102,7 @@ class SortCarScreen extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 5.0),
                         child: Stack(
+                          clipBehavior: Clip.none,
                           children: [
                             Container(
                               height: 110,
@@ -93,25 +113,22 @@ class SortCarScreen extends StatelessWidget {
                                 fit: BoxFit.fill,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Positioned(
-                                left: -1,
-                                top: 10,
-                                child: Container(
-                                    height: 20,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(10),
-                                            bottomRight: Radius.circular(10))),
-                                    child: Icon(
-                                      Icons.star,
-                                      color: Colors.white,
-                                      size: 20,
-                                    )),
-                              ),
+                            Positioned(
+                              left: 0,
+                              top: 10,
+                              child: Container(
+                                  height: 20,
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(10),
+                                          bottomRight: Radius.circular(10))),
+                                  child: Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  )),
                             ),
                             Positioned(
                               bottom: 0,
@@ -233,6 +250,7 @@ class SortCarScreen extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 5.0),
                         child: Stack(
+                          clipBehavior: Clip.none,
                           children: [
                             Container(
                               height: 110,
@@ -243,25 +261,22 @@ class SortCarScreen extends StatelessWidget {
                                 fit: BoxFit.fill,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Positioned(
-                                left: -1,
-                                top: 10,
-                                child: Container(
-                                    height: 20,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(10),
-                                            bottomRight: Radius.circular(10))),
-                                    child: Icon(
-                                      Icons.star,
-                                      color: Colors.white,
-                                      size: 20,
-                                    )),
-                              ),
+                            Positioned(
+                              left: 0,
+                              top: 10,
+                              child: Container(
+                                  height: 20,
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(10),
+                                          bottomRight: Radius.circular(10))),
+                                  child: Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  )),
                             ),
                             Positioned(
                               bottom: 0,
@@ -383,6 +398,7 @@ class SortCarScreen extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 5.0),
                         child: Stack(
+                          clipBehavior: Clip.none,
                           children: [
                             Container(
                               height: 110,
@@ -393,25 +409,22 @@ class SortCarScreen extends StatelessWidget {
                                 fit: BoxFit.fill,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Positioned(
-                                left: -1,
-                                top: 10,
-                                child: Container(
-                                    height: 20,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(10),
-                                            bottomRight: Radius.circular(10))),
-                                    child: Icon(
-                                      Icons.star,
-                                      color: Colors.white,
-                                      size: 20,
-                                    )),
-                              ),
+                            Positioned(
+                              left: 0,
+                              top: 10,
+                              child: Container(
+                                  height: 20,
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(10),
+                                          bottomRight: Radius.circular(10))),
+                                  child: Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  )),
                             ),
                             Positioned(
                               bottom: 0,
@@ -537,6 +550,7 @@ class SortCarScreen extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 5.0),
                         child: Stack(
+                          clipBehavior: Clip.none,
                           children: [
                             Container(
                               height: 110,
@@ -547,25 +561,22 @@ class SortCarScreen extends StatelessWidget {
                                 fit: BoxFit.fill,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Positioned(
-                                left: -1,
-                                top: 10,
-                                child: Container(
-                                    height: 20,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(10),
-                                            bottomRight: Radius.circular(10))),
-                                    child: Icon(
-                                      Icons.star,
-                                      color: Colors.white,
-                                      size: 20,
-                                    )),
-                              ),
+                            Positioned(
+                              left: 0,
+                              top: 10,
+                              child: Container(
+                                  height: 20,
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(10),
+                                          bottomRight: Radius.circular(10))),
+                                  child: Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  )),
                             ),
                             Positioned(
                               bottom: 0,
@@ -691,5 +702,22 @@ Widget box1(var icon, var text) {
         width: 10,
       )
     ],
+  );
+}
+
+Widget cont({var text, var width = 80, var icon}) {
+  return Container(
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(icon),
+        Center(child: Text(text)),
+      ],
+    ),
+    height: 25,
+    width: width,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(5),
+        border: Border.all(width: 1, color: Colors.grey)),
   );
 }
